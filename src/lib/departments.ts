@@ -1,5 +1,7 @@
 import { readFileSync } from "fs";
 import { join } from "path";
+import { prisma } from "@/lib/prisma";
+import { isReadOnlyFileSystem } from "@/lib/utils/environment-helpers";
 
 export interface DepartmentOption {
   key: string;
@@ -53,11 +55,11 @@ function readRawDepartments(): RawDepartment[] {
   }
 }
 
-export function getDepartments(
+function normalizeDepartmentOptions(
+  source: RawDepartment[],
   options: { includeAll?: boolean } = {}
 ): DepartmentOption[] {
   const includeAll = options.includeAll ?? false;
-  const source = readRawDepartments();
   const entries = source.length > 0 ? source : DEFAULT_DEPARTMENTS;
   const normalized = new Map<string, DepartmentOption>();
 
@@ -79,6 +81,49 @@ export function getDepartments(
   return Array.from(normalized.values());
 }
 
+async function readRawDepartmentsFromDatabase(): Promise<RawDepartment[] | null> {
+  try {
+    const contentDataPage = await prisma.page.findUnique({
+      where: { pageId: "content-data" },
+      select: { content: true },
+    });
+
+    if (!contentDataPage?.content) {
+      return null;
+    }
+
+    const content = contentDataPage.content as unknown;
+    if (!content || typeof content !== "object" || Array.isArray(content)) {
+      return null;
+    }
+
+    const departments = (content as ContentDataShape).departments;
+    return Array.isArray(departments) ? departments : null;
+  } catch {
+    return null;
+  }
+}
+
+export function getDepartments(
+  options: { includeAll?: boolean } = {}
+): DepartmentOption[] {
+  const source = readRawDepartments();
+  return normalizeDepartmentOptions(source, options);
+}
+
+export async function getDepartmentsAsync(
+  options: { includeAll?: boolean } = {}
+): Promise<DepartmentOption[]> {
+  if (isReadOnlyFileSystem()) {
+    const dbDepartments = await readRawDepartmentsFromDatabase();
+    if (dbDepartments && dbDepartments.length > 0) {
+      return normalizeDepartmentOptions(dbDepartments, options);
+    }
+  }
+
+  return getDepartments(options);
+}
+
 export function isValidDepartmentKey(
   key: string,
   options: { includeAll?: boolean } = {}
@@ -86,6 +131,17 @@ export function isValidDepartmentKey(
   const normalizedKey = normalizeDepartmentKey(key);
   if (!normalizedKey) return false;
   return getDepartments(options).some((department) => department.key === normalizedKey);
+}
+
+export async function isValidDepartmentKeyAsync(
+  key: string,
+  options: { includeAll?: boolean } = {}
+): Promise<boolean> {
+  const normalizedKey = normalizeDepartmentKey(key);
+  if (!normalizedKey) return false;
+
+  const departments = await getDepartmentsAsync(options);
+  return departments.some((department) => department.key === normalizedKey);
 }
 
 export function getDepartmentLabel(key: string): string {

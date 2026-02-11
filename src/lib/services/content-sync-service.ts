@@ -261,22 +261,91 @@ export class ContentSyncService {
     }
   }
 
+  private static readContentDataFromFile(): Record<string, unknown> {
+    try {
+      const filePath = join(process.cwd(), "src/lib/content-data.json");
+      return toRecord(JSON.parse(readFileSync(filePath, "utf-8")));
+    } catch {
+      return {};
+    }
+  }
+
+  private static async readContentDataFromDatabase(): Promise<Record<string, unknown>> {
+    const contentDataPage = await prisma.page.findUnique({
+      where: { pageId: "content-data" },
+      select: { content: true },
+    });
+
+    return toRecord(contentDataPage?.content);
+  }
+
+  private static async upsertContentDataPage(contentData: Record<string, unknown>): Promise<void> {
+    const currentPage = await prisma.page.findUnique({
+      where: { pageId: "content-data" },
+      select: {
+        title: true,
+        description: true,
+        isPublished: true,
+      },
+    });
+
+    const titleFromContent =
+      typeof contentData.title === "string" && contentData.title.trim()
+        ? contentData.title
+        : null;
+    const descriptionFromContent =
+      typeof contentData.description === "string" && contentData.description.trim()
+        ? contentData.description
+        : null;
+
+    await prisma.page.upsert({
+      where: { pageId: "content-data" },
+      update: {
+        title: titleFromContent || currentPage?.title || "Content Data",
+        description:
+          descriptionFromContent ||
+          currentPage?.description ||
+          "Content data master values",
+        lastModified: new Date(),
+        isPublished: currentPage?.isPublished ?? true,
+        content: contentData as Prisma.InputJsonValue,
+      },
+      create: {
+        pageId: "content-data",
+        title: titleFromContent || "Content Data",
+        description: descriptionFromContent || "Content data master values",
+        lastModified: new Date(),
+        isPublished: true,
+        content: contentData as Prisma.InputJsonValue,
+      },
+    });
+  }
+
  
   static async updateContentData(updates: Record<string, unknown>): Promise<void> {
     try {
-    
+      const existingDbData = await this.readContentDataFromDatabase();
+      const existingFileData = this.readContentDataFromFile();
+
+      const existingData = isReadOnlyFileSystem()
+        ? Object.keys(existingDbData).length > 0
+          ? existingDbData
+          : existingFileData
+        : Object.keys(existingFileData).length > 0
+          ? existingFileData
+          : existingDbData;
+
+      const updatedData = {
+        ...existingData,
+        ...updates,
+      };
+
       if (!isReadOnlyFileSystem()) {
         const filePath = join(process.cwd(), "src/lib/content-data.json");
-        const existingData = JSON.parse(readFileSync(filePath, "utf-8"));
-
-        const updatedData = {
-          ...existingData,
-          ...updates,
-        };
-
         writeFileSync(filePath, JSON.stringify(updatedData, null, 2), "utf-8");
-      } else {
       }
+
+      await this.upsertContentDataPage(updatedData);
 
       if (Array.isArray(updates.jobOpenings)) {
         await this.syncJobOpeningsToDatabase(updates.jobOpenings);

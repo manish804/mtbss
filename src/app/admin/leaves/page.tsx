@@ -107,7 +107,9 @@ export default function LeavesPage() {
   const fetchLeaves = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch("/api/leave-requests");
+      const response = await fetch("/api/leave-requests", {
+        cache: "no-store",
+      });
       if (response.ok) {
         const data = await response.json();
         setLeaves(data);

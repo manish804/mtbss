@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-import { isValidDepartmentKey, normalizeDepartmentKey } from '@/lib/departments';
+import { isValidDepartmentKeyAsync, normalizeDepartmentKey } from '@/lib/departments';
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 function getDepartmentFromPayload(payload: unknown): string | null {
   if (!payload || typeof payload !== "object") {
@@ -32,7 +35,14 @@ function getStringField(payload: unknown, field: string): string | null {
 export async function GET() {
   try {
     const employees = await prisma.employee.findMany();
-    return NextResponse.json({ data: employees });
+    return NextResponse.json(
+      { data: employees },
+      {
+        headers: {
+          "Cache-Control": "no-store, no-cache, must-revalidate",
+        },
+      }
+    );
   } catch {
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
@@ -55,7 +65,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!department || !isValidDepartmentKey(department)) {
+    if (!department || !(await isValidDepartmentKeyAsync(department))) {
       return NextResponse.json(
         { error: "Invalid department key. Please select a valid department." },
         { status: 400 }

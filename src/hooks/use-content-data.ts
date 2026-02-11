@@ -14,7 +14,9 @@ export function useContentData() {
       setLoading(true);
       setError(null);
 
-      const response = await fetch("/api/content");
+      const response = await fetch("/api/content", {
+        cache: "no-store",
+      });
       const result = await response.json();
 
       if (!result.success) {

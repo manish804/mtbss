@@ -45,7 +45,9 @@ export default function RejectLeave() {
     const fetchLeave = async () => {
       try {
         setFetching(true);
-        const response = await fetch(`/api/leave-requests/${id}`);
+        const response = await fetch(`/api/leave-requests/${id}`, {
+          cache: "no-store",
+        });
         if (response.ok) {
           const data = await response.json();
           setLeave(data);

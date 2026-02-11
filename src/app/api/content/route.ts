@@ -3,6 +3,58 @@ import { ContentSyncService } from "@/lib/services/content-sync-service";
 import { handleApiError, ApiError } from "@/lib/errors/api-error";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { prisma } from "@/lib/prisma";
+import { isReadOnlyFileSystem } from "@/lib/utils/environment-helpers";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+function readContentDataFromFile(): Record<string, unknown> {
+  try {
+    const filePath = join(process.cwd(), "src/lib/content-data.json");
+    return JSON.parse(readFileSync(filePath, "utf-8")) as Record<string, unknown>;
+  } catch {
+    return {};
+  }
+}
+
+async function readContentDataFromDatabase(): Promise<Record<string, unknown> | null> {
+  try {
+    const contentDataPage = await prisma.page.findUnique({
+      where: { pageId: "content-data" },
+      select: { content: true },
+    });
+
+    const content = contentDataPage?.content;
+    if (!content || typeof content !== "object" || Array.isArray(content)) {
+      return null;
+    }
+
+    return content as Record<string, unknown>;
+  } catch {
+    return null;
+  }
+}
+
+async function loadContentData(): Promise<Record<string, unknown>> {
+  const fileContent = readContentDataFromFile();
+
+  if (isReadOnlyFileSystem()) {
+    const dbContent = await readContentDataFromDatabase();
+    if (dbContent) {
+      return { ...fileContent, ...dbContent };
+    }
+    return fileContent;
+  }
+
+  const hasFileContent = Object.keys(fileContent).length > 0;
+  if (hasFileContent) {
+    return fileContent;
+  }
+
+  const dbContent = await readContentDataFromDatabase();
+  return dbContent || {};
+}
 
 /**
  * GET /api/content - Get content data (jobs, services, etc.)
@@ -12,8 +64,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get("type");
 
-    const filePath = join(process.cwd(), "src/lib/content-data.json");
-    const contentData = JSON.parse(readFileSync(filePath, "utf-8"));
+    const contentData = await loadContentData();
 
     let data;
     switch (type) {
@@ -41,10 +92,17 @@ export async function GET(request: NextRequest) {
         data = contentData;
     }
 
-    return NextResponse.json({
-      success: true,
-      data,
-    });
+    return NextResponse.json(
+      {
+        success: true,
+        data,
+      },
+      {
+        headers: {
+          "Cache-Control": "no-store, no-cache, must-revalidate",
+        },
+      }
+    );
   } catch (error) {
     return handleApiError(error);
   }

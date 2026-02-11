@@ -26,7 +26,9 @@ export function useDepartments(includeAll: boolean = false) {
       setError(null);
 
       const query = includeAll ? "?includeAll=true" : "";
-      const response = await fetch(`/api/departments${query}`);
+      const response = await fetch(`/api/departments${query}`, {
+        cache: "no-store",
+      });
       const result = await response.json();
 
       if (!response.ok || !result.success) {

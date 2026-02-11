@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { isValidDepartmentKey, normalizeDepartmentKey } from "@/lib/departments";
+import { isValidDepartmentKeyAsync, normalizeDepartmentKey } from "@/lib/departments";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 function getDepartmentFromPayload(payload: unknown): string | null {
   if (!payload || typeof payload !== "object") {
@@ -40,7 +43,14 @@ export async function GET(
       );
     }
 
-    return NextResponse.json({ data: employee });
+    return NextResponse.json(
+      { data: employee },
+      {
+        headers: {
+          "Cache-Control": "no-store, no-cache, must-revalidate",
+        },
+      }
+    );
   } catch {
     return NextResponse.json(
       { error: "Internal server error" },
@@ -76,7 +86,7 @@ export async function PUT(
       );
     }
 
-    if (!isValidDepartmentKey(department)) {
+    if (!(await isValidDepartmentKeyAsync(department))) {
       const existingDepartment = normalizeDepartmentKey(
         existingEmployee.department
       );
