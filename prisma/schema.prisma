@@ -1,0 +1,233 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Page {
+  id           String   @id @default(uuid())
+  pageId       String   @unique
+  title        String
+  description  String
+  lastModified DateTime
+  isPublished  Boolean  @default(false)
+  content      Json
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("pages")
+}
+
+model JobOpening {
+  id                  String           @id @default(cuid())
+  title               String
+  department          String
+  location            String
+  type                String
+  experience          String
+  salary              String?
+  description         String
+  requirements        Json
+  responsibilities    Json
+  skills              Json?
+  benefits            Json?
+  isActive            Boolean          @default(true)
+  applicationDeadline DateTime?
+  postedDate          DateTime         @default(now())
+  companyId           String?
+  createdAt           DateTime         @default(now())
+  updatedAt           DateTime         @default(now())
+  applications        JobApplication[]
+  company             Company?         @relation(fields: [companyId], references: [id])
+
+  @@index([department])
+  @@index([location])
+  @@index([type])
+  @@index([isActive])
+  @@index([postedDate])
+  @@map("job_openings")
+}
+
+model Company {
+  id                String       @id @default(cuid())
+  name              String
+  description       String?
+  website           String?
+  email             String?
+  phone             String?
+  address           String?
+  logo              String?
+  industry          String?
+  foundedYear       Int?
+  employeeCount     String?
+  headquarters      String?
+  socialLinks       Json?
+  showName          Boolean      @default(true)
+  showDescription   Boolean      @default(true)
+  showWebsite       Boolean      @default(true)
+  showEmail         Boolean      @default(true)
+  showPhone         Boolean      @default(true)
+  showAddress       Boolean      @default(true)
+  showLogo          Boolean      @default(true)
+  showIndustry      Boolean      @default(true)
+  showFoundedYear   Boolean      @default(true)
+  showEmployeeCount Boolean      @default(true)
+  showHeadquarters  Boolean      @default(true)
+  showSocialLinks   Boolean      @default(true)
+  isActive          Boolean      @default(true)
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @default(now())
+  jobOpenings       JobOpening[]
+
+  @@map("companies")
+}
+
+model JobApplication {
+  id                 String               @id @default(cuid())
+  jobId              String
+  firstName          String
+  lastName           String
+  email              String
+  phone              String?
+  address            String?
+  city               String?
+  state              String?
+  zipCode            String?
+  country            String?
+  linkedinProfile    String?
+  portfolioWebsite   String?
+  currentCompany     String?
+  currentPosition    String?
+  experienceYears    Int?
+  expectedSalary     Float?
+  noticePeriod       String?
+  availableStartDate DateTime?
+  coverLetter        String?
+  additionalInfo     String?
+  skills             Json?
+  education          Json?
+  certifications     Json?
+  references         Json?
+  resumeUrl          String?
+  portfolioFiles     Json?
+  willingToRelocate  Boolean              @default(false)
+  remoteWork         Boolean              @default(false)
+  travelAvailability Boolean              @default(false)
+  visaSponsorship    Boolean              @default(false)
+  backgroundCheck    Boolean              @default(false)
+  termsAccepted      Boolean              @default(false)
+  status             JobApplicationStatus @default(SUBMITTED)
+  reviewNotes        String?
+  reviewedAt         DateTime?
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @default(now())
+  job                JobOpening           @relation(fields: [jobId], references: [id])
+
+  @@index([jobId])
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+  @@map("job_applications")
+}
+
+model Employee {
+  id            String         @id @default(cuid())
+  employeeId    String         @unique
+  name          String
+  email         String?
+  department    String
+  designation   String
+  contactNumber String
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @default(now())
+  leaveRequests LeaveRequest[]
+
+  @@index([employeeId])
+  @@index([email])
+  @@map("employees")
+}
+
+model LeaveRequest {
+  id            String       @id @default(cuid())
+  empId         String
+  employeeName  String
+  department    String
+  designation   String
+  leaveType     LeaveType    @default(CASUAL)
+  startDate     DateTime     @db.Date
+  endDate       DateTime     @db.Date
+  appliedDays   Float
+  contactNumber String
+  reason        String
+  isHalfDay     Boolean      @default(false)
+  isPaidLeave   Boolean      @default(true)
+  status        LeaveStatus  @default(PENDING)
+  confirmLeave  ConfirmLeave @default(DONT_KNOW)
+  reviewedAt    DateTime?
+  reviewNotes   String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @default(now())
+  employee      Employee     @relation(fields: [empId], references: [id])
+
+  @@index([empId])
+  @@index([status])
+  @@index([startDate, endDate])
+  @@index([department])
+  @@map("leave_requests")
+}
+
+enum JobApplicationStatus {
+  SUBMITTED
+  UNDER_REVIEW
+  SHORTLISTED
+  INTERVIEWED
+  SELECTED
+  REJECTED
+  WITHDRAWN
+}
+
+enum LeaveStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  CANCELLED
+}
+
+enum LeaveType {
+  CASUAL
+  PAID
+  COMP_OFF
+}
+
+enum ConfirmLeave {
+  YES
+  NO
+  DONT_KNOW
+}
+
+enum ContactMessageStatus {
+  NEW
+  READ
+  RESPONDED
+}
+
+model ContactMessage {
+  id        String               @id @default(uuid())
+  name      String
+  email     String
+  phone     String?
+  company   String?
+  subject   String?
+  message   String
+  status    ContactMessageStatus @default(NEW)
+  createdAt DateTime             @default(now())
+  updatedAt DateTime             @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+  @@map("contact_messages")
+}

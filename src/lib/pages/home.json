@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "title": "Seamless Accounting  Business Solutions",
+    "ctaLink": "#about-services",
+    "ctaText": "Services",
+    "styling": {
+      "padding": "py-20 px-4",
+      "textColor": "#e3e2e9",
+      "gradientTo": "purple-600",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "primary",
+        "textColor": "text-blue-600",
+        "hoverTextColor": "hover:text-blue-700",
+        "backgroundColor": "bg-white",
+        "hoverBackgroundColor": "hover:bg-blue-50"
+      },
+      "gradientFrom": "blue-600",
+      "backgroundColor": "#1b98b8",
+      "gradientDirection": "to-r"
+    },
+    "subtitle": "Simplifying your financial world2",
+    "description": "We combine financial expertise with cutting-edge technology to help\nbusinesses grow, optimize, and stay compliant.",
+    "backgroundImage": {
+      "id": "hero-home",
+      "imageUrl": "https://i.ibb.co/35VVvPK3/MTBS-Banner.jpg",
+      "imageHint": "technology office financial planning",
+      "description": "A modern office environment"
+    }
+  },
+  "title": "Professional Financial & Business Services - MTBS Landing",
+  "trust": {
+    "image": {
+      "id": "trust-image",
+      "imageUrl": "https://cdn.corporatefinanceinstitute.com/assets/financial-plan.jpeg",
+      "imageHint": "professional office environment",
+      "description": "Trust section image"
+    },
+    "title": "Trust is the foundation of great service",
+    "ctaLink": "",
+    "ctaText": "",
+    "styling": {
+      "padding": "py-16 px-4",
+      "textColor": "text-white",
+      "backgroundColor": "#1b98b8"
+    },
+    "features": [],
+    "subtitle": "We provide comprehensive financial and business services to individuals, small businesses and corporate clients. Our services are tailored to the unique needs of each client. We work as part of your team, understanding your needs and what matters to you.",
+    "statistics": [
+      {
+        "label": "Years of Experience",
+        "number": "15+"
+      },
+      {
+        "label": "Clients Served",
+        "number": "100+"
+      },
+      {
+        "label": "Client Satisfaction",
+        "number": "98%"
+      },
+      {
+        "label": "Support Available",
+        "number": "24/7"
+      }
+    ]
+  },
+  "pageId": "home",
+  "customers": {
+    "title": " Customers",
+    "styling": {
+      "padding": "py-16 px-4",
+      "cardStyle": {
+        "padding": "p-8",
+        "shadowColor": "shadow-lg",
+        "borderRadius": "rounded-xl",
+        "backgroundColor": "bg-white"
+      },
+      "textColor": "text-gray-900",
+      "backgroundColor": "bg-gray-50"
+    },
+    "subtitle": "Join our growing list of satisfied clients, including:",
+    "testimonials": [
+      {
+        "name": "Anita Sharma, BrightPath Traders",
+        "rating": 5,
+        "company": "Small Business Owner",
+        "content": "Multi Task Business Solutions has transformed how we manage our accounts.\nTheir financial expertise saves us time and money. I can now focus fully on\ngrowing my business."
+      },
+      {
+        "name": "Dr. Karan Mehta, NovaCare Clinics",
+        "rating": 5,
+        "company": "Healthcare Professional",
+        "content": "The team handles all my tax and compliance needs with ease. Their guidance\nkeeps my finances stress-free and organized. I trust them completely with my\npractice’s growth."
+      },
+      {
+        "name": "Rohan Desai, Blue Peak Ventures",
+        "rating": 4,
+        "company": "Entrepreneur",
+        "content": "From bookkeeping to financial planning, they manage everything seamlessly.\nTheir proactive support helps me make smarter business decisions. Truly a\npartner I can rely on."
+      }
+    ],
+    "customerLogos": []
+  },
+  "published": true,
+  "industries": {
+    "image": {
+      "id": "industries-image",
+      "imageUrl": "https://i.ibb.co/3mRfBCRY/webpc-passthru.webp",
+      "imageHint": "professional team working",
+      "description": "Industries section image"
+    },
+    "items": [
+      {
+        "icon": "Building2",
+        "title": "Startups & Small Businesses",
+        "description": "Get scalable financial solutions that grow with your business."
+      },
+      {
+        "icon": "Building2",
+        "title": "Corporates & Enterprises",
+        "description": "Ensure compliance and efficiency across complex financial operations."
+      },
+      {
+        "icon": "Building2",
+        "title": "High-Net-Worth Individuals",
+        "description": "Protect and grow your wealth with tailored financial strategies."
+      },
+      {
+        "icon": "Building2",
+        "title": "Non-Profits &NGOs",
+        "description": "Stay compliant and transparent with specialized accounting support."
+      }
+    ],
+    "title": "Specialized Expertise Across Key Industries:",
+    "ctaLink": "/#about-services",
+    "ctaText": "Our Services",
+    "styling": {
+      "padding": "py-16 px-4",
+      "cardStyle": {
+        "padding": "p-6",
+        "borderColor": "border-gray-200",
+        "shadowColor": "shadow-sm",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "bg-gray-50",
+        "hoverBorderColor": "hover:border-blue-300",
+        "hoverShadowColor": "hover:shadow-md",
+        "hoverBackgroundColor": "hover:bg-blue-50"
+      },
+      "textColor": "text-gray-900",
+      "backgroundColor": "bg-white"
+    },
+    "subtitle": "Our financial professionals will handle your entire financial portfolio, including business and personal accounts."
+  },
+  "description": "Simplifying your financial world with expert financial and business services. Get personalized solutions from certified professionals.",
+  "callToAction": {
+    "title": "Want more information?",
+    "ctaLink": "/contact",
+    "ctaText": "Let's talk!",
+    "styling": {
+      "padding": "py-20 px-4",
+      "textColor": "text-white",
+      "gradientTo": "blue-600",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "primary",
+        "textColor": "text-purple-600",
+        "hoverTextColor": "hover:text-purple-700",
+        "backgroundColor": "bg-white",
+        "hoverBackgroundColor": "hover:bg-purple-50"
+      },
+      "gradientFrom": "purple-600",
+      "backgroundColor": "#1b98b8",
+      "gradientDirection": "to-r"
+    },
+    "subtitle": "Contact us today for a free consultation and discover how we can help you achieve your financial goals."
+  },
+  "lastModified": "2025-09-29T11:34:35.306Z",
+  "aboutServices": {
+    "title": "We make the complex simple",
+    "ctaLink": "/services",
+    "ctaText": "View Our Services",
+    "styling": {
+      "padding": "py-16 px-4",
+      "textColor": "text-gray-900",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "primary",
+        "textColor": "text-white",
+        "backgroundColor": "bg-blue-600",
+        "hoverBackgroundColor": "hover:bg-blue-700"
+      },
+      "backgroundColor": "bg-gray-50"
+    },
+    "subtitle": "We offer comprehensive financial and business services, so you can focus on everything else in your business.",
+    "description": "With our expertise and know-how, we'll help you save money, reduce stress, and focus on you're real priorities."
+  }
+}

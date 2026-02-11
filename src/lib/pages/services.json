@@ -1,0 +1,281 @@
+{
+  "hero": {
+    "image": {
+      "id": "taxes-hero",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+      "imageHint": "professional working on taxes at clean desk",
+      "description": "Tax documents and laptop on professional desk"
+    },
+    "title": "Navigate Tax Complexity with Confidence.",
+    "ctaLink": "/contact",
+    "ctaText": "Contact us",
+    "styling": {
+      "padding": "py-12 md:py-20 lg:py-24",
+      "textColor": "text-foreground",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "primary",
+        "textColor": "text-primary-foreground",
+        "backgroundColor": "bg-primary",
+        "hoverBackgroundColor": "hover:bg-primary/90"
+      },
+      "backgroundColor": "bg-background"
+    },
+    "subtitle": "OUR SERVICES",
+    "statistics": [
+      {
+        "label": "Professional Providers",
+        "number": "12"
+      },
+      {
+        "label": "Annual Cases",
+        "number": "4630"
+      }
+    ],
+    "description": "Filing tax returns can be stressful. We're here to manage every detail, ensuring your taxes are filed correctly and on time. Our expert guidance helps you minimize stress and avoid costly penalties, providing peace of mind from the start.",
+    "backgroundImage": {
+      "id": "hero-bg",
+      "imageUrl": "https://cdn.corporatefinanceinstitute.com/assets/financial-plan.jpeg",
+      "imageHint": "hero background",
+      "description": "Hero background"
+    }
+  },
+  "title": "Our Services - Professional Tax & Business Solutions",
+  "pageId": "services",
+  "published": true,
+  "description": "Comprehensive tax and business services including tax returns, bookkeeping, consulting, and audit support for individuals and businesses.",
+  "lastModified": "2025-09-29T11:25:32.555Z",
+  "serviceStats": {
+    "enabled": true,
+    "styling": {
+      "padding": "py-6",
+      "textColor": "text-foreground",
+      "backgroundColor": "bg-background"
+    },
+    "statistics": [
+      {
+        "label": "Professional Providers",
+        "number": "12"
+      },
+      {
+        "label": "Annual Cases",
+        "number": "4630"
+      }
+    ]
+  },
+  "serviceDetails": {
+    "styling": {
+      "padding": "py-10 md:py-12",
+      "cardStyle": {
+        "padding": "p-8",
+        "shadowColor": "shadow-2xl",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "bg-card"
+      },
+      "textColor": "text-foreground",
+      "backgroundColor": "bg-background"
+    },
+    "services": [
+      {
+        "id": "bookkeeping",
+        "image": {
+          "id": "service-bookkeeping",
+          "imageUrl": "https://images.stockcake.com/public/4/9/2/4924eb8d-cfab-4d11-8766-d872f750e29e_large/organizing-financial-success-stockcake.jpg",
+          "imageHint": "organized bookkeeping ledger and calculator",
+          "description": "Professional bookkeeping services"
+        },
+        "title": "Bookkeeping for Financial Clarity.",
+        "layout": "text-left-image-right",
+        "category": "BOOKKEEPING",
+        "features": [
+          "Transaction Recording",
+          "Bank Reconciliation",
+          "Financial Reporting",
+          "Expense Tracking",
+          "Budget Monitoring"
+        ],
+        "description": "At Multi Task Business Solutions, we understand that accurate bookkeeping is\nthe foundation of every successful business. Our bookkeeping services ensure\nthat every financial transaction is recorded correctly and on time, giving you a\nclear and reliable picture of your company’s financial health. From daily expense\ntracking to ledger maintenance, we take care of the details so you can focus on\nrunning your business with confidence.\nWe follow structured, process-driven methods supported by modern accounting\nsoftware, ensuring compliance with industry standards and statutory\nrequirements. Whether it’s managing receipts, categorizing expenses, or\nreconciling accounts, our team provides meticulous attention to detail and\nconsistency. This not only keeps your records audit-ready but also helps you make\ninformed financial decisions.\nBy outsourcing your bookkeeping to us, you gain a trusted partner who delivers\naccuracy, transparency, and efficiency. We act as an extended part of your team,\nreducing errors, improving financial visibility, and freeing up your valuable time.\nWith our global experience, we tailor solutions to meet the needs of startups,\nSMEs, and international clients alike."
+      },
+      {
+        "id": "accounts-receivable",
+        "image": {
+          "id": "service-accounts-receivable",
+          "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4",
+          "imageHint": "streamlined invoices and payment tracking",
+          "description": "Accounts receivable management"
+        },
+        "title": "Accounts Receivable Management.",
+        "layout": "image-left-text-right",
+        "category": "ACCOUNTS RECEIVABLE",
+        "features": [
+          "Invoice Processing",
+          "Payment Collection",
+          "Customer Communication",
+          "Credit Control",
+          "Cash Flow Optimization"
+        ],
+        "description": "Timely and efficient collection of receivables is critical to maintaining a healthy\ncash flow. At Multi Task Business Solutions, our Accounts Receivable\nManagement services are designed to help businesses minimize outstanding\npayments, improve collection cycles, and ensure steady inflows of revenue. From\ngenerating accurate invoices to tracking due dates and reconciling customer\naccounts, we provide end-to-end support to keep your receivables in check.\nOur process-driven approach ensures that every invoice is raised on time,\npayments are monitored closely, and follow-ups are conducted professionally.\nWith the aid of advanced tools and systematic reporting, we help reduce delays,\nresolve discrepancies quickly, and maintain transparent communication with your\ncustomers. This not only improves liquidity but also strengthens client\nrelationships through clarity and consistency.\nBy partnering with us, businesses gain better control over their revenue streams\nand reduce the risk of bad debts. Whether you are a startup aiming for stability or\nan established enterprise looking to optimize cash management, our tailored\n\nreceivable solutions empower you to focus on growth while we manage your\ncollections with precision."
+      },
+      {
+        "id": "accounts-payable",
+        "image": {
+          "id": "service-accounts-payable",
+          "imageUrl": "https://s3.ap-south-1.amazonaws.com/prod-easebuzz-static/static/base/assets_aug_2021/img/easebuzz/easebuzz-explainer/explainers-upi/vendor-payment-solutions/vendor-payments.png",
+          "imageHint": "managing bills and vendor payments",
+          "description": "Accounts payable management"
+        },
+        "title": "Accounts Payable Solutions.",
+        "layout": "text-left-image-right",
+        "category": "ACCOUNTS PAYABLE",
+        "features": [
+          "Bill Processing",
+          "Vendor Management",
+          "Payment Scheduling",
+          "Discount Optimization",
+          "Expense Control"
+        ],
+        "description": "Managing payables effectively is essential for maintaining trust with vendors and\noptimizing your business cash flow. At Multi Task Business Solutions, our\nAccounts Payable Management services ensure that every vendor invoice is\nprocessed accurately, approved on time, and paid within the agreed timelines. By\nhandling the complexities of vendor management, expense tracking, and payment\nscheduling, we help your business avoid late fees, maintain strong supplier\nrelationships, and gain better control over expenses.\nWe use a structured, technology-enabled approach to streamline the entire\npayables cycle. From invoice verification and expense categorization to\nreconciliation and reporting, our processes are built to minimize errors and\nprovide full transparency. Detailed reports and dashboards keep you informed\nabout upcoming obligations, outstanding payables, and spending patterns,\nenabling smarter decision-making and cost control.\nBy outsourcing your accounts payable function to us, you gain efficiency,\naccuracy, and peace of mind. Our expertise allows you to focus on strategic\nbusiness activities while we take care of the back-end financial operations,\nensuring a smoother workflow and healthier cash flow management."
+      },
+      {
+        "id": "financial-statements",
+        "image": {
+          "id": "service-financial-statements",
+          "imageUrl": "https://cdn-resources.highradius.com/resources/wp-content/uploads/2024/05/Benefits-of-Financial-Statements.png",
+          "imageHint": "analyzing financial statement reports",
+          "description": "Financial statements preparation"
+        },
+        "title": "Financial Statement Preparation.",
+        "layout": "image-left-text-right",
+        "category": "FINANCIAL STATEMENTS",
+        "features": [
+          "Balance Sheet Preparation",
+          "Income Statement",
+          "Cash Flow Statement",
+          "Financial Analysis",
+          "Compliance Reporting"
+        ],
+        "description": "Accurate financial statements are the cornerstone of informed business decision-\nmaking. At Multi Task Business Solutions, we specialize in preparing\ncomprehensive reports including balance sheets, profit &amp; loss statements, cash\nflow statements, and customized MIS reports tailored to your business\nrequirements. These statements provide a clear and accurate snapshot of your\ncompany’s financial position, helping you evaluate performance, track progress,\nand plan strategically.\nOur team ensures every report is prepared with precision and in compliance with\naccounting standards and regulatory guidelines. We combine financial expertise\nwith technology to generate statements that are timely, detailed, and easy to\ninterpret. Whether it’s monthly management reports or annual financial\nstatements, we deliver insights that allow you to identify growth opportunities,\ncontrol costs, and ensure transparency for stakeholders.\nWith our support, businesses gain more than just reports — they gain actionable\ninsights. By transforming raw financial data into meaningful analysis, we\n\nempower you to make decisions that enhance profitability, improve operational\nefficiency, and build long-term financial stability."
+      },
+      {
+        "id": "forecasting-planning",
+        "image": {
+          "id": "service-forecasting-planning",
+          "imageUrl": "https://whitlockco.com/imager/assets/4300/Team-of-Businesspeople-Planning-a-Companys-Future_4ef7d0c078d781fc9bc41ad4ac6f830d.webp",
+          "imageHint": "team doing strategic financial planning",
+          "description": "Financial forecasting and planning"
+        },
+        "title": "Financial Forecasting & Planning.",
+        "layout": "text-left-image-right",
+        "category": "FORECASTING & PLANNING",
+        "features": [
+          "Financial Projections",
+          "Budget Planning",
+          "Scenario Analysis",
+          "Risk Assessment",
+          "Strategic Planning Support"
+        ],
+        "description": "A forward-looking financial strategy is vital for any business aiming for sustainable\ngrowth. At Multi Task Business Solutions, we provide data-driven forecasting and\nfinancial planning services that help you anticipate challenges, seize\nopportunities, and make confident decisions for the future. By analyzing historical\nperformance, market trends, and business drivers, we create realistic projections\nthat align with your long-term goals.\nOur approach goes beyond numbers — we work closely with you to understand\nyour business model, industry, and growth objectives. Using advanced tools and\nproven methodologies, we prepare detailed budgets, cash flow forecasts, and\nfinancial models tailored to your specific needs. This ensures that your business\nhas the clarity to allocate resources effectively, manage risks proactively, and\nachieve greater financial stability.\nWith our expertise, you gain a trusted partner who can turn complex data into\nactionable insights. Whether you’re a startup planning for expansion or an\nestablished organization looking to optimize profitability, our forecasting and\nplanning solutions provide the roadmap for strategic growth and sustainable\nsuccess."
+      },
+      {
+        "id": "invoice-quotation",
+        "image": {
+          "id": "service-invoice-quotation",
+          "imageUrl": "https://acme.invoicehome.com/assets/laptop_phone_invoice-e3382247e34ec99ad05ebec0d439ca4a16dc62c4d3d1f2f1a66014b8b66be76c.webp",
+          "imageHint": "professional preparing an invoice document",
+          "description": "Invoice and quotation preparation"
+        },
+        "title": "Professional Invoicing & Quotation Support.",
+        "layout": "image-left-text-right",
+        "category": "INVOICE & QUOTATION",
+        "features": [
+          "Invoice Creation",
+          "Quotation Preparation",
+          "Document Formatting",
+          "Client Communication",
+          "Payment Terms Setup"
+        ],
+        "description": "Clear, accurate, and timely invoicing is key to maintaining healthy business\noperations and ensuring client satisfaction. At Multi Task Business Solutions, we\noffer professional invoice preparation and quotation support designed to meet\nthe specific requirements of your business and your clients. Our team ensures\nthat every invoice and quotation is well-structured, compliant with accounting\nstandards, and customized to reflect your brand’s professionalism.\nWe manage the entire process — from drafting and verifying invoice details to\nensuring accuracy in client information, pricing, taxes, and payment terms. For\nquotations, we provide well-presented and competitive proposals that help you\nwin new business while maintaining clarity and transparency with potential\nclients. By reducing errors and delays in these critical documents, we help your\nbusiness project credibility and maintain smooth financial workflows.\nOutsourcing this function to us means more than just saving time. It ensures\nconsistency, reduces administrative burden, and allows you to focus on building\n\nstronger client relationships. With our support, you can be confident that every\ninvoice and quotation sent reflects the efficiency and reliability of your business."
+      },
+      {
+        "id": "staff-recruitment",
+        "image": {
+          "id": "service-staff-recruitment",
+          "imageUrl": "https://www.dsgco.com/wp-content/uploads/2024/06/interview_team-35.jpg",
+          "imageHint": "recruitment team interviewing a candidate",
+          "description": "Staff recruitment services"
+        },
+        "title": "Staff Recruitment for Global Teams.",
+        "layout": "text-left-image-right",
+        "category": "STAFF RECRUITMENT",
+        "features": [
+          "Talent Sourcing",
+          "Candidate Screening",
+          "Interview Coordination",
+          "Background Checks",
+          "Onboarding Support"
+        ],
+        "description": "Finding the right talent across borders can be challenging, but with Multi Task\nBusiness Solutions, you gain a trusted partner who understands international\nhiring needs. We specialize in sourcing, screening, and recruiting skilled\nprofessionals tailored to your business requirements. Whether you need finance\nexperts, administrative staff, or technical specialists, our recruitment services\nensure you get qualified candidates who align with your organizational goals.\nOur process-driven approach includes end-to-end support — from understanding\nyour staffing needs to shortlisting, interviewing, and onboarding the right\ncandidates. With access to a wide talent pool and industry networks, we ensure\nevery hire is not only technically proficient but also culturally adaptable for\nsmooth integration into your team.\nBy leveraging our recruitment expertise, overseas businesses can save valuable\ntime, reduce hiring risks, and focus on growth while we handle the complexities\nof international recruitment. We act as an extension of your HR team, delivering\nreliable staffing solutions that support both immediate needs and long-term\nworkforce strategies."
+      }
+    ]
+  },
+  "serviceHighlights": {
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Professional Tax Preparation",
+        "description": "Our experts ensure accuracy and compliance, maximizing your returns and minimizing your stress."
+      },
+      {
+        "icon": "FileText",
+        "title": "Secure Document Management",
+        "description": "We handle your sensitive financial documents with secure, organized, and professional care."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Personalized Service",
+        "description": "Receive dedicated, one-on-one guidance tailored to your unique financial situation and goals."
+      }
+    ],
+    "styling": {
+      "padding": "py-10 md:py-12",
+      "cardStyle": {
+        "padding": "p-6",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "bg-background"
+      },
+      "textColor": "text-card-foreground",
+      "backgroundColor": "bg-card"
+    }
+  },
+  "additionalServiceHighlights": {
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Business Consulting",
+        "description": "Strategic advice to help you navigate growth, challenges, and new opportunities."
+      },
+      {
+        "icon": "FileText",
+        "title": "Payroll Services",
+        "description": "Accurate and timely payroll processing to keep your team happy and your business compliant."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Client Partnership",
+        "description": "We work as an extension of your team, dedicated to your long-term success."
+      }
+    ],
+    "title": "Additional Business Services",
+    "enabled": true,
+    "styling": {
+      "padding": "py-10 md:py-12",
+      "cardStyle": {
+        "padding": "p-6",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "bg-background"
+      },
+      "textColor": "text-card-foreground",
+      "backgroundColor": "bg-card"
+    }
+  }
+}

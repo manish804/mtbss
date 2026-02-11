@@ -1,0 +1,197 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern, bright office space with computers and people collaborating, suggesting a professional tech environment.",
+      "imageUrl": "https://picsum.photos/seed/softax-hero/1920/1080",
+      "imageHint": "technology office"
+    },
+    {
+      "id": "about-hero",
+      "description": "A group of diverse business professionals in a modern office, engaged in a productive meeting.",
+      "imageUrl": "https://picsum.photos/seed/softax-about-hero/1200/675",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "about-choose-us",
+      "description": "A person sitting at a desk in a modern office, viewed from behind, with another person out of focus in the background.",
+      "imageUrl": "https://picsum.photos/seed/softax-choose-us/600/750",
+      "imageHint": "office meeting"
+    },
+    {
+      "id": "service-tax-returns",
+      "description": "A blue card with numbers on it next to a pen and laptop on a wooden desk.",
+      "imageUrl": "https://picsum.photos/seed/softax-tax/400/300",
+      "imageHint": "tax forms"
+    },
+    {
+      "id": "service-audit",
+      "description": "Business people shaking hands in an office.",
+      "imageUrl": "https://picsum.photos/seed/softax-audit/400/300",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "service-accounting",
+      "description": "A calculator and invoices on a clipboard.",
+      "imageUrl": "https://picsum.photos/seed/softax-accounting/400/300",
+      "imageHint": "calculator invoice"
+    },
+    {
+      "id": "service-consulting",
+      "description": "Two women having a discussion over a tablet in an office.",
+      "imageUrl": "https://picsum.photos/seed/softax-consulting/400/300",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "industries-experts",
+      "description": "Two women collaborating over a laptop in a cafe.",
+      "imageUrl": "https://picsum.photos/seed/softax-industries/600/450",
+      "imageHint": "women collaborating"
+    },
+    {
+      "id": "trust-foundation",
+      "description": "A smiling woman in a professional office setting, looking at the camera.",
+      "imageUrl": "https://picsum.photos/seed/softax-trust/600/450",
+      "imageHint": "smiling woman office"
+    },
+
+    {
+      "id": "customer-6898",
+      "description": "The number 6898 in a stylized font.",
+      "imageUrl": "https://picsum.photos/seed/customer-6898/128/48",
+      "imageHint": "number logo"
+    },
+    {
+      "id": "customer-central",
+      "description": "Logo for Central K.",
+      "imageUrl": "https://picsum.photos/seed/customer-central/128/48",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "customer-karlson",
+      "description": "Logo for Karlson.",
+      "imageUrl": "https://picsum.photos/seed/customer-karlson/128/48",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "customer-w",
+      "description": "Logo with the letter W in a circle.",
+      "imageUrl": "https://picsum.photos/seed/customer-w/128/48",
+      "imageHint": "letter logo"
+    },
+    {
+      "id": "customer-von-callen",
+      "description": "Logo for Von Callen.",
+      "imageUrl": "https://picsum.photos/seed/customer-von-callen/128/48",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "team-member-1",
+      "description": "A smiling woman with curly hair.",
+      "imageUrl": "https://picsum.photos/seed/team-1/400/400",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "team-member-2",
+      "description": "A man in a suit adjusting his tie.",
+      "imageUrl": "https://picsum.photos/seed/team-2/400/400",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "team-member-3",
+      "description": "A smiling man with short black hair.",
+      "imageUrl": "https://picsum.photos/seed/team-3/400/400",
+      "imageHint": "smiling man"
+    },
+    {
+      "id": "team-member-4",
+      "description": "A smiling woman with brown hair.",
+      "imageUrl": "https://picsum.photos/seed/team-4/400/400",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "contact-map",
+      "description": "A stylized map showing streets of a city, with a pin dropped in the center.",
+      "imageUrl": "https://picsum.photos/seed/softax-map/1920/400",
+      "imageHint": "city map"
+    },
+    {
+      "id": "testimonial-group",
+      "description": "A diverse group of three colleagues collaborating and smiling in a modern office.",
+      "imageUrl": "https://picsum.photos/seed/softax-testimonial/600/400",
+      "imageHint": "team collaboration"
+    },
+    {
+      "id": "testimonial-avatar",
+      "description": "Portrait of a smiling woman with dark hair.",
+      "imageUrl": "https://picsum.photos/seed/softax-avatar/100/100",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "taxes-hero",
+      "description": "A blue booklet with numbers on it, next to a laptop and a pen on a wooden desk.",
+      "imageUrl": "https://picsum.photos/seed/softax-taxes-hero/800/1000",
+      "imageHint": "desk taxes"
+    },
+    {
+      "id": "service-audit-team",
+      "description": "A group of business professionals in a meeting.",
+      "imageUrl": "https://picsum.photos/seed/softax-audit-team/600/800",
+      "imageHint": "business professionals"
+    },
+    {
+      "id": "service-accounting-team",
+      "description": "A person calculating with a calculator.",
+      "imageUrl": "https://picsum.photos/seed/softax-accounting-team/600/800",
+      "imageHint": "calculator person"
+    },
+    {
+      "id": "consulting-hero",
+      "description": "Two women having a discussion over a tablet in an office.",
+      "imageUrl": "https://picsum.photos/seed/softax-consulting-hero/800/600",
+      "imageHint": "women discussion"
+    },
+    {
+      "id": "service-bookkeeping",
+      "description": "Professional bookkeeping services with documents and calculator.",
+      "imageUrl": "https://picsum.photos/seed/bookkeeping/400/300",
+      "imageHint": "bookkeeping documents calculator"
+    },
+    {
+      "id": "service-accounts-receivable",
+      "description": "Accounts receivable management with invoices and payments.",
+      "imageUrl": "https://picsum.photos/seed/accounts-receivable/400/300",
+      "imageHint": "accounts receivable invoices payments"
+    },
+    {
+      "id": "service-accounts-payable",
+      "description": "Accounts payable management with bills and payments.",
+      "imageUrl": "https://picsum.photos/seed/accounts-payable/400/300",
+      "imageHint": "accounts payable bills payments"
+    },
+    {
+      "id": "service-financial-statements",
+      "description": "Financial statements preparation with reports and analysis.",
+      "imageUrl": "https://picsum.photos/seed/financial-statements/400/300",
+      "imageHint": "financial statements reports analysis"
+    },
+    {
+      "id": "service-forecasting-planning",
+      "description": "Financial forecasting and planning with projections.",
+      "imageUrl": "https://picsum.photos/seed/forecasting-planning/400/300",
+      "imageHint": "forecasting planning financial projections"
+    },
+    {
+      "id": "service-invoice-quotation",
+      "description": "Invoice and quotation preparation with documents.",
+      "imageUrl": "https://picsum.photos/seed/invoice-quotation/400/300",
+      "imageHint": "invoices quotations documents"
+    },
+    {
+      "id": "service-staff-recruitment",
+      "description": "Staff recruitment services with team hiring.",
+      "imageUrl": "https://picsum.photos/seed/staff-recruitment/400/300",
+      "imageHint": "staff recruitment team hiring"
+    }
+  ]
+}

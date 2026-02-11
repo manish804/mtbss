@@ -1,0 +1,384 @@
+{
+  "services": [
+    {
+      "id": "tax-returns",
+      "type": "service",
+      "slug": "tax-returns",
+      "title": "Tax Returns",
+      "description": "Professional tax return preparation for individuals and businesses. Our experienced team ensures accuracy and maximizes your deductions while keeping you compliant with all tax regulations.",
+      "shortDescription": "Expert tax return preparation services",
+      "features": [
+        "Individual tax returns",
+        "Business tax returns",
+        "Tax amendments and corrections",
+        "Multi-state tax filing",
+        "Electronic filing available"
+      ],
+      "image": {
+        "id": "service-tax-returns",
+        "description": "Tax forms and calculator on desk",
+        "imageUrl": "https://picsum.photos/seed/tax/400/300",
+        "imageHint": "tax forms calculator"
+      },
+      "ctaText": "Get Started",
+      "ctaLink": "/contact",
+      "styling": {
+        "cardStyle": {
+          "backgroundColor": "bg-white",
+          "textColor": "text-gray-900",
+          "borderColor": "border-blue-200",
+          "hoverBackgroundColor": "hover:bg-blue-50",
+          "hoverBorderColor": "hover:border-blue-300",
+          "shadowColor": "shadow-lg",
+          "hoverShadowColor": "hover:shadow-xl"
+        },
+        "buttonStyle": {
+          "backgroundColor": "bg-blue-600",
+          "textColor": "text-white",
+          "hoverBackgroundColor": "hover:bg-blue-700",
+          "variant": "primary"
+        }
+      },
+      "published": true,
+      "lastModified": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "bookkeeping",
+      "type": "service",
+      "slug": "bookkeeping",
+      "title": "Bookkeeping Services",
+      "description": "Comprehensive bookkeeping solutions to keep your financial records organized and up-to-date. From daily transaction recording to monthly reconciliations, we handle it all.",
+      "shortDescription": "Professional bookkeeping and record management",
+      "features": [
+        "Daily transaction recording",
+        "Bank reconciliations",
+        "Financial statement preparation",
+        "Accounts payable/receivable management",
+        "Payroll processing support"
+      ],
+      "image": {
+        "id": "service-bookkeeping",
+        "description": "Organized financial documents and ledgers",
+        "imageUrl": "https://picsum.photos/seed/books/400/300",
+        "imageHint": "financial documents ledger"
+      },
+      "ctaText": "Learn More",
+      "ctaLink": "/contact",
+      "styling": {
+        "cardStyle": {
+          "backgroundColor": "bg-white",
+          "textColor": "text-gray-900",
+          "borderColor": "border-green-200",
+          "hoverBackgroundColor": "hover:bg-green-50",
+          "hoverBorderColor": "hover:border-green-300",
+          "shadowColor": "shadow-lg",
+          "hoverShadowColor": "hover:shadow-xl"
+        },
+        "buttonStyle": {
+          "backgroundColor": "bg-green-600",
+          "textColor": "text-white",
+          "hoverBackgroundColor": "hover:bg-green-700",
+          "variant": "primary"
+        }
+      },
+      "published": true,
+      "lastModified": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "type": "page",
+      "pageId": "home",
+      "sections": [
+        {
+          "id": "hero",
+          "type": "hero",
+          "title": "Professional Tax & Business Services",
+          "subtitle": "Simplifying your financial world with expert guidance and innovative solutions",
+          "content": "Get personalized tax and business services from certified professionals who understand your unique needs.",
+          "image": {
+            "id": "hero-background",
+            "description": "Modern office with financial documents",
+            "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+            "imageHint": "modern office financial"
+          },
+          "styling": {
+            "backgroundColor": "bg-gradient-to-r",
+            "gradientFrom": "blue-600",
+            "gradientTo": "purple-600",
+            "gradientDirection": "to-r",
+            "textColor": "text-white",
+            "padding": "py-20 px-4",
+            "buttonStyle": {
+              "backgroundColor": "bg-white",
+              "textColor": "text-blue-600",
+              "hoverBackgroundColor": "hover:bg-blue-50",
+              "hoverTextColor": "hover:text-blue-700",
+              "variant": "primary"
+            }
+          }
+        },
+        {
+          "id": "services-overview",
+          "type": "features",
+          "title": "Our Services",
+          "subtitle": "Comprehensive financial solutions for individuals and businesses",
+          "styling": {
+            "backgroundColor": "bg-gray-50",
+            "textColor": "text-gray-900",
+            "padding": "py-16 px-4",
+            "cardStyle": {
+              "backgroundColor": "bg-white",
+              "shadowColor": "shadow-md",
+              "hoverShadowColor": "hover:shadow-lg",
+              "borderRadius": "rounded-xl"
+            }
+          }
+        }
+      ],
+      "published": true,
+      "lastModified": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "departments": [
+    {
+      "key": "all",
+      "label": "All Departments"
+    },
+    {
+      "key": "finance",
+      "label": "Finance & Accounting"
+    },
+    {
+      "key": "hr",
+      "label": "Human Resources"
+    },
+    {
+      "key": "technology",
+      "label": "Technology"
+    },
+    {
+      "key": "marketing",
+      "label": "Marketing"
+    },
+    {
+      "key": "operations",
+      "label": "Operations"
+    },
+    {
+      "key": "other",
+      "label": "Other"
+    }
+  ],
+  "jobTypes": [
+    {
+      "key": "all",
+      "label": "All Types"
+    },
+    {
+      "key": "Full-time",
+      "label": "Full-time"
+    },
+    {
+      "key": "Part-time",
+      "label": "Part-time"
+    },
+    {
+      "key": "Contract",
+      "label": "Contract"
+    },
+    {
+      "key": "Internship",
+      "label": "Internship"
+    }
+  ],
+  "locations": [
+    {
+      "key": "all",
+      "label": "All Locations"
+    },
+    {
+      "key": "Remote",
+      "label": "Remote"
+    },
+    {
+      "key": "On-site",
+      "label": "On-site"
+    },
+    {
+      "key": "Hybrid",
+      "label": "Hybrid"
+    }
+  ],
+  "experienceLevels": [
+    {
+      "key": "all",
+      "label": "All Levels"
+    },
+    {
+      "key": "Entry",
+      "label": "Entry Level (0-1 years)"
+    },
+    {
+      "key": "Junior",
+      "label": "Junior (1-3 years)"
+    },
+    {
+      "key": "Mid",
+      "label": "Mid Level (3-6 years)"
+    },
+    {
+      "key": "Senior",
+      "label": "Senior (6+ years)"
+    }
+  ],
+  "benefits": [
+  {
+    "id": "health-insurance",
+    "title": "Health & Insurance",
+    "description": "Comprehensive medical, dental, and vision coverage to keep you and your family healthy.",
+    "icon": "Heart",
+    "category": "health",
+    "color": "emerald"
+  },
+  {
+    "id": "retirement-plan",
+    "title": "Retirement Savings Plan",
+    "description": "Secure your future with our generous 401(k) plan, including company matching.",
+    "icon": "PiggyBank",
+    "category": "financial",
+    "color": "blue"
+  },
+  {
+    "id": "flexible-work",
+    "title": "Flexible Work Options",
+    "description": "Achieve a healthy work-life balance with our remote, hybrid, and flexible schedule options.",
+    "icon": "Home",
+    "category": "flexibility",
+    "color": "purple"
+  },
+  {
+    "id": "career-development",
+    "title": "Career Development",
+    "description": "Grow with us through an annual training budget, conference attendance, and certification support.",
+    "icon": "GraduationCap",
+    "category": "growth",
+    "color": "orange"
+  },
+  {
+    "id": "paid-time-off",
+    "title": "Paid Time Off",
+    "description": "Recharge with our competitive policy for vacation, sick leave, and personal days.",
+    "icon": "Calendar",
+    "category": "time-off",
+    "color": "green"
+  },
+  {
+    "id": "wellness-programs",
+    "title": "Wellness Programs",
+    "description": "Stay healthy and happy with gym memberships, mental health support, and other wellness initiatives.",
+    "icon": "Dumbbell",
+    "category": "wellness",
+    "color": "pink"
+  },
+  {
+    "id": "technology-support",
+    "title": "Technology Support",
+    "description": "Get the tools you need to succeed with an annual stipend for home office and tech upgrades.",
+    "icon": "Laptop",
+    "category": "technology",
+    "color": "indigo"
+  },
+  {
+    "id": "performance-incentives",
+    "title": "Performance Incentives",
+    "description": "Be rewarded for your hard work with quarterly and annual bonuses based on performance.",
+    "icon": "Trophy",
+    "category": "financial",
+    "color": "yellow"
+  }
+],
+  "companyCulture": [
+    {
+      "id": "innovation",
+      "title": "Innovation First",
+      "description": "We embrace new technologies and creative solutions to solve complex financial challenges.",
+      "icon": "Lightbulb",
+      "color": "yellow"
+    },
+    {
+      "id": "collaboration",
+      "title": "Collaborative Environment",
+      "description": "Cross-functional teams work together to deliver exceptional results for our clients.",
+      "icon": "Users",
+      "color": "blue"
+    },
+    {
+      "id": "growth-mindset",
+      "title": "Growth Mindset",
+      "description": "We invest in our people's development and encourage continuous learning and improvement.",
+      "icon": "TrendingUp",
+      "color": "green"
+    },
+    {
+      "id": "client-focused",
+      "title": "Client-Centric Approach",
+      "description": "Every decision we make is guided by what's best for our clients and their success.",
+      "icon": "Target",
+      "color": "red"
+    },
+    {
+      "id": "work-life-balance",
+      "title": "Work-Life Balance",
+      "description": "We believe in sustainable work practices that allow our team to thrive both professionally and personally.",
+      "icon": "Scale",
+      "color": "purple"
+    },
+    {
+      "id": "transparency",
+      "title": "Open Communication",
+      "description": "We foster an environment of transparency, open feedback, and honest communication at all levels.",
+      "icon": "MessageCircle",
+      "color": "indigo"
+    }
+  ],
+  "jobOpenings": [
+    {
+      "id": "marketing-coordinator-006",
+      "type": "job",
+      "title": "Marketing Coordinator hai",
+      "department": "marketing",
+      "location": "Hybrid",
+      "jobType": "Full-time",
+      "experience": "2-4 years",
+      "description": "Join our marketing team as a Marketing Coordinator and help drive our brand awareness and client acquisition efforts. You'll work on digital marketing campaigns, content creation, and event coordination.",
+      "responsibilities": [
+        "Develop and execute digital marketing campaigns",
+        "Create content for social media and website",
+        "Coordinate marketing events and webinars",
+        "Analyze marketing metrics and campaign performance",
+        "Manage email marketing campaigns",
+        "Support brand consistency across all channels"
+      ],
+      "requirements": [
+        "Bachelor's degree in Marketing, Communications, or related field",
+        "2+ years of marketing experience",
+        "Experience with digital marketing tools (Google Analytics, social media platforms)",
+        "Strong writing and communication skills",
+        "Creative thinking and problem-solving abilities",
+        "Knowledge of design software (Canva, Adobe Creative Suite) preferred"
+      ],
+      "salaryRange": "$45,000 - $55,000",
+      "benefits": [
+        "Health and dental insurance",
+        "401k with company match",
+        "Flexible work arrangements",
+        "Professional development budget",
+        "Creative project opportunities"
+      ],
+      "published": true,
+      "lastModified": "2025-09-20T09:19:54.325Z"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "form": {
+    "title": "Tell us your details and we'll get right back to you.",
+    "fields": {
+      "name": {
+        "enabled": true,
+        "required": true,
+        "validation": {
+          "pattern": "^[a-zA-Z\\s'-]+$",
+          "maxLength": 100,
+          "minLength": 1,
+          "errorMessage": "Name can only contain letters, spaces, hyphens, and apostrophes"
+        },
+        "placeholder": "Your Full Name"
+      },
+      "email": {
+        "enabled": true,
+        "required": true,
+        "validation": {
+          "type": "email",
+          "maxLength": 254,
+          "errorMessage": "Please enter a valid email address"
+        },
+        "placeholder": "your.email@example.com"
+      },
+      "phone": {
+        "enabled": true,
+        "required": false,
+        "validation": {
+          "pattern": "^[\\+]?[1-9][\\d]{0,15}$",
+          "maxLength": 15,
+          "minLength": 10,
+          "errorMessage": "Please enter a valid phone number (10-15 digits)"
+        },
+        "placeholder": "(555) 123-4567"
+      },
+      "company": {
+        "enabled": true,
+        "required": false,
+        "validation": {
+          "maxLength": 100,
+          "errorMessage": "Company name must be less than 100 characters"
+        },
+        "placeholder": "Your Company Name (Optional)"
+      },
+      "message": {
+        "rows": 5,
+        "enabled": true,
+        "required": true,
+        "validation": {
+          "maxLength": 1000,
+          "minLength": 10,
+          "errorMessage": "Message must be between 10 and 1000 characters"
+        },
+        "placeholder": "Let us know how we can help you..."
+      },
+      "serviceType": {
+        "enabled": true,
+        "options": [
+          {
+            "label": "Tax Preparation",
+            "value": "tax-preparation"
+          },
+          {
+            "label": "Payroll Services",
+            "value": "payroll"
+          },
+          {
+            "label": "Bookkeeping",
+            "value": "bookkeeping"
+          },
+          {
+            "label": "Business Setup",
+            "value": "business-setup"
+          },
+          {
+            "label": "Financial Planning",
+            "value": "financial-planning"
+          },
+          {
+            "label": "Other",
+            "value": "other"
+          }
+        ],
+        "required": false,
+        "placeholder": "Select a service type"
+      }
+    },
+    "styling": {
+      "cardStyle": {
+        "padding": "p-6",
+        "shadowColor": "shadow-sm",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "bg-card"
+      },
+      "textColor": "text-foreground",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "default",
+        "textColor": "text-primary-foreground",
+        "backgroundColor": "bg-primary",
+        "hoverBackgroundColor": "hover:bg-primary/90"
+      },
+      "backgroundColor": "bg-background"
+    },
+    "submitButton": {
+      "text": "Send Message",
+      "loadingText": "Sending..."
+    },
+    "notifications": {
+      "errorMessage": "There was an error submitting your message. Please try again.",
+      "successMessage": "Thank you for your message! We'll get back to you soon.",
+      "emailNotifications": {
+        "enabled": true,
+        "recipients": [
+          "mymail@mailservice.com"
+        ]
+      }
+    }
+  },
+  "hero": {
+    "title": "Send us a message",
+    "ctaLink": "",
+    "ctaText": "",
+    "styling": {
+      "padding": "py-12 md:py-24",
+      "textColor": "text-foreground",
+      "backgroundColor": "bg-background"
+    },
+    "subtitle": "Looking for help with your tax return or payroll? Or maybe you're interested in full accounting services. Whatever you need, we're here to help you get on with business.",
+    "description": "ok"
+  },
+  "title": "Contact Us - Get Professional Tax & Business Help",
+  "pageId": "contact",
+  "published": true,
+  "contactInfo": {
+    "email": "mymail@mailservice.com",
+    "phone": "(555) 555-5555",
+    "address": "Number, Street, City, State, Zip Code",
+    "businessHours": [
+      {
+        "days": "Mon - Fri",
+        "hours": "10:00 am - 5:00 pm"
+      },
+      {
+        "days": "Sat - Sun",
+        "hours": "Closed"
+      }
+    ]
+  },
+  "description": "Contact our team of professional tax and business experts. We're here to help with all your financial needs.",
+  "testimonial": {
+    "enabled": true,
+    "styling": {
+      "padding": "py-16 px-4",
+      "textColor": "text-foreground",
+      "backgroundColor": "bg-muted/50"
+    }
+  },
+  "lastModified": "2025-09-25T05:30:57.245Z"
+}

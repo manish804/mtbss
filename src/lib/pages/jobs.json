@@ -1,0 +1,319 @@
+{
+  "hero": {
+    "title": "Join Our Growing Team",
+    "ctaLink": "#available-positions",
+    "ctaText": "View Open Positions",
+    "styling": {
+      "padding": "py-16 md:py-24 lg:py-32",
+      "textColor": "text-white",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "primary",
+        "textColor": "text-blue-600",
+        "backgroundColor": "bg-white",
+        "hoverBackgroundColor": "hover:bg-white/90"
+      },
+      "backgroundColor": "#ffffff",
+      "gradientDirection": "to-br"
+    },
+    "subtitle": "Build your career with MTBS and help revolutionize tax management and financial services for businesses and individuals.",
+    "description": "We're looking for talented professionals who are passionate about making a difference in the financial services industry."
+  },
+  "title": "Careers - Join Our Growing Team at MTBS",
+  "pageId": "jobs",
+  "benefits": {
+    "title": "Why Work With Us",
+    "enabled": true,
+    "styling": {
+      "padding": "py-16 md:py-20",
+      "cardStyle": {
+        "padding": "p-6",
+        "shadowColor": "shadow-sm",
+        "borderRadius": "rounded-xl",
+        "backgroundColor": "bg-card"
+      },
+      "textColor": "text-foreground",
+      "backgroundColor": "bg-muted/30"
+    },
+    "subtitle": "We offer comprehensive benefits and a supportive work environment",
+    "showCompanyCulture": true
+  },
+  "jobStats": {
+    "enabled": true,
+    "styling": {
+      "padding": "py-8",
+      "cardStyle": {
+        "padding": "p-3",
+        "borderRadius": "rounded-full",
+        "backgroundColor": "bg-primary/10"
+      },
+      "textColor": "text-foreground",
+      "backgroundColor": "#ae9e9e"
+    },
+    "showOpenPositions": true,
+    "showRemoteOptions": true
+  },
+  "jobTypes": [
+    {
+      "key": "all",
+      "label": "All Types"
+    },
+    {
+      "key": "Full-time",
+      "label": "Full-time"
+    },
+    {
+      "key": "Part-time",
+      "label": "Part-time"
+    },
+    {
+      "key": "Contract",
+      "label": "Contract"
+    },
+    {
+      "key": "Internship",
+      "label": "Internship"
+    }
+  ],
+  "locations": [
+    {
+      "key": "all",
+      "label": "All Locations"
+    },
+    {
+      "key": "Remote",
+      "label": "Remote"
+    },
+    {
+      "key": "On-site",
+      "label": "On-site"
+    },
+    {
+      "key": "Hybrid",
+      "label": "Hybrid"
+    }
+  ],
+  "published": true,
+  "departments": [
+    {
+      "key": "all",
+      "label": "All Departments"
+    },
+    {
+      "key": "finance",
+      "label": "Finance & Accounting"
+    },
+    {
+      "key": "hr",
+      "label": "Human Resources"
+    },
+    {
+      "key": "technology",
+      "label": "Technology"
+    },
+    {
+      "key": "marketing",
+      "label": "Marketing"
+    }
+  ],
+  "description": "Explore career opportunities at MTBS. Join our team of professionals and help revolutionize tax management and financial services.",
+  "jobListings": {
+    "title": "Available Positions",
+    "styling": {
+      "padding": "py-12 md:py-16",
+      "cardStyle": {
+        "padding": "p-6",
+        "borderColor": "border",
+        "shadowColor": "shadow-sm",
+        "borderRadius": "rounded-lg",
+        "backgroundColor": "#603e3e",
+        "hoverShadowColor": "hover:shadow-md",
+        "hoverBackgroundColor": "hover:bg-card/80"
+      },
+      "textColor": "text-foreground",
+      "buttonStyle": {
+        "size": "sm",
+        "variant": "primary",
+        "textColor": "text-primary-foreground",
+        "backgroundColor": "bg-primary",
+        "hoverBackgroundColor": "hover:bg-primary/90"
+      },
+      "backgroundColor": "#adaadf"
+    },
+    "subtitle": "Explore our current job openings and find your next career opportunity",
+    "showSalaryRange": true,
+    "showLocationInfo": true,
+    "showDepartmentBadges": true
+  },
+  "benefitsList": [
+    {
+      "id": "health-insurance",
+      "icon": "Heart",
+      "color": "emerald",
+      "title": "Health & Insurance",
+      "category": "health",
+      "description": "Comprehensive medical, dental, and vision coverage to keep you and your family healthy."
+    },
+    {
+      "id": "retirement-plan",
+      "icon": "PiggyBank",
+      "color": "blue",
+      "title": "Retirement Savings Plan",
+      "category": "financial",
+      "description": "Secure your future with our generous 401(k) plan, including company matching."
+    },
+    {
+      "id": "flexible-work",
+      "icon": "Home",
+      "color": "purple",
+      "title": "Flexible Work Options",
+      "category": "flexibility",
+      "description": "Achieve a healthy work-life balance with our remote, hybrid, and flexible schedule options."
+    },
+    {
+      "id": "career-development",
+      "icon": "GraduationCap",
+      "color": "orange",
+      "title": "Career Development",
+      "category": "growth",
+      "description": "Grow with us through an annual training budget, conference attendance, and certification support."
+    },
+    {
+      "id": "paid-time-off",
+      "icon": "Calendar",
+      "color": "green",
+      "title": "Paid Time Off",
+      "category": "time-off",
+      "description": "Recharge with our competitive policy for vacation, sick leave, and personal days."
+    },
+    {
+      "id": "wellness-programs",
+      "icon": "Dumbbell",
+      "color": "pink",
+      "title": "Wellness Programs",
+      "category": "wellness",
+      "description": "Stay healthy and happy with gym memberships, mental health support, and other wellness initiatives."
+    },
+    {
+      "id": "technology-support",
+      "icon": "Laptop",
+      "color": "indigo",
+      "title": "Technology Support",
+      "category": "technology",
+      "description": "Get the tools you need to succeed with an annual stipend for home office and tech upgrades."
+    },
+    {
+      "id": "performance-incentives",
+      "icon": "Trophy",
+      "color": "yellow",
+      "title": "Performance Incentives",
+      "category": "financial",
+      "description": "Be rewarded for your hard work with quarterly and annual bonuses based on performance."
+    }
+  ],
+  "callToAction": {
+    "title": "Your Perfect Role Isn't Listed?",
+    "ctaLink": "/contact",
+    "ctaText": "Contact Us",
+    "styling": {
+      "padding": "py-16 md:py-20",
+      "textColor": "text-primary-foreground",
+      "buttonStyle": {
+        "size": "lg",
+        "variant": "secondary",
+        "textColor": "text-foreground",
+        "backgroundColor": "bg-background",
+        "hoverBackgroundColor": "hover:bg-background/90"
+      },
+      "backgroundColor": "bg-primary"
+    },
+    "subtitle": "Don't see a position that fits? We're always looking for talented individuals.",
+    "secondaryCtaLink": "#benefits",
+    "secondaryCtaText": "View All Benefits"
+  },
+  "lastModified": "2025-09-29T11:42:44.948Z",
+  "experienceLevels": [
+    {
+      "key": "all",
+      "label": "All Levels"
+    },
+    {
+      "key": "Entry",
+      "label": "Entry Level (0-1 years)"
+    },
+    {
+      "key": "Junior",
+      "label": "Junior (1-3 years)"
+    },
+    {
+      "key": "Mid",
+      "label": "Mid Level (3-6 years)"
+    },
+    {
+      "key": "Senior",
+      "label": "Senior (6+ years)"
+    }
+  ],
+  "departmentFilters": {
+    "title": "Filter by Department",
+    "enabled": true,
+    "styling": {
+      "padding": "py-4",
+      "textColor": "text-foreground",
+      "buttonStyle": {
+        "size": "sm",
+        "variant": "outline",
+        "textColor": "text-foreground",
+        "borderColor": "border-border",
+        "backgroundColor": "bg-background",
+        "hoverBackgroundColor": "hover:bg-primary/10"
+      },
+      "backgroundColor": "bg-background"
+    },
+    "showJobCounts": true
+  },
+  "companyCultureList": [
+    {
+      "id": "innovation",
+      "icon": "Lightbulb",
+      "color": "yellow",
+      "title": "Innovation First",
+      "description": "We embrace new technologies and creative solutions to solve complex financial challenges."
+    },
+    {
+      "id": "collaboration",
+      "icon": "Users",
+      "color": "blue",
+      "title": "Collaborative Environment",
+      "description": "Cross-functional teams work together to deliver exceptional results for our clients."
+    },
+    {
+      "id": "growth-mindset",
+      "icon": "TrendingUp",
+      "color": "green",
+      "title": "Growth Mindset",
+      "description": "We invest in our people's development and encourage continuous learning and improvement."
+    },
+    {
+      "id": "client-focused",
+      "icon": "Target",
+      "color": "red",
+      "title": "Client-Centric Approach",
+      "description": "Every decision we make is guided by what's best for our clients and their success."
+    },
+    {
+      "id": "work-life-balance",
+      "icon": "Scale",
+      "color": "purple",
+      "title": "Work-Life Balance",
+      "description": "We believe in sustainable work practices that allow our team to thrive both professionally and personally."
+    },
+    {
+      "id": "transparency",
+      "icon": "MessageCircle",
+      "color": "indigo",
+      "title": "Open Communication",
+      "description": "We foster an environment of transparency, open feedback, and honest communication at all levels."
+    }
+  ]
+}
